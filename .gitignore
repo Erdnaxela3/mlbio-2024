@@ -1,0 +1,7 @@
+*.csv
+
+*.swp
+
+*.zip
+
+.DS_Store
