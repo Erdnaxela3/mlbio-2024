@@ -1,16 +1,24 @@
-[project]
+[tool.poetry]
 name = "ml4bio"
 version = "0.1.0"
-description = "Add your description here"
+description = ""
+authors = ["Alexandre WENG <alexandre.weng@epita.fr>"]
 readme = "README.md"
-requires-python = "<3.11,>=3.10"
-dependencies = [
-    "ipykernel>=6.29.5",
-    "matplotlib>=3.9.2",
-    "numpy>=1.26.4",
-    "pandas>=2.2.3",
-    "pywavelets>=1.7.0",
-    "scikit-learn>=1.5.2",
-    "scipy>=1.14.1",
-    "tensorflow==2.17",
-]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+tensorflow = "2.16.2"
+ipykernel = "^6.29.5"
+pandas = "^2.2.3"
+matplotlib = "^3.9.2"
+scipy = "^1.14.1"
+pywavelets = "^1.7.0"
+scikit-learn = "^1.5.2"
+torch = "^2.5.0"
+monai = "1.4.0"
+torchvision = "^0.20.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
